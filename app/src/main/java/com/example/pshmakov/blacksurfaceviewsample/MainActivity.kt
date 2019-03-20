@@ -22,29 +22,5 @@ class MainActivity : AppCompatActivity() {
             overridePendingTransition(R.anim.no_anim, R.anim.no_anim)
             startActivity(intent, options.toBundle())
             overridePendingTransition(R.anim.no_anim, R.anim.no_anim)
-            getWindow().getSharedElementExitTransition().addListener(object: Transition.TransitionListener {
-                override fun onTransitionCancel(transition: Transition?) {
-                    //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-                }
-
-                override fun onTransitionEnd(transition: Transition?) {
-                    //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-                    //getWindow().getDecorView().findViewById<android.view.View>(android.R.id.content).requestLayout();
-                }
-
-                override fun onTransitionPause(transition: Transition?) {
-                    //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-                }
-
-                override fun onTransitionResume(transition: Transition?) {
-                    //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-                }
-
-                override fun onTransitionStart(transition: Transition?) {
-                    //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-                }
-            })
-
-        }, 2000)
     }
 }
